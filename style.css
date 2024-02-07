@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+p,h1,h2{
+    color: aliceblue;
+}
+#topsection{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 50vw;
+}
+h1{
+    text-align: center;
+    grid-column:1/4;
+    font-size: 20px;
+}
+h2{
+    text-align: center;
+    font-size: 12px;
+}
+.album{
+    justify-content:space-between;
+    max-width: 200px;
+}
+.popup{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 200px;
+    max-height: 20px;
+    font-size: 12px;
+}
+button{ 
+    max-width:75px;
+    max-height: 20px;
+    font-size: 12px;
+}
