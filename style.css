@@ -9,7 +9,7 @@ p,h1,h2{
 #topsection{
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 98vw;
     justify-content: space-between;
 }
 header{
@@ -34,15 +34,72 @@ h2{
 }
 .album{
     justify-content:space-between;
-    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.album:hover .popup{
+    display: grid;
+}
+#samba{
+    background-image: url(./bilder/wsamba.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#forest{
+    background-image: url(./bilder/wforest.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#utopia{
+    background-image: url(./bilder/wutopia.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#puppets{
+    background-image: url(./bilder/wmaster.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ghosts{
+    background-image: url(./bilder/wghosts.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#theory{
+    background-image: url(./bilder/wtheory.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.art{
+    max-width: 250px;
+    max-height: 250px;
 }
 .popup{
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    max-width: 200px;
-    max-height: 20px;
+    margin-top: 180px;
+    max-width: 250px;
+    max-height: 70px;
     font-size: 12px;
+    background:rgba(255, 255, 200, .8);
+    
+    
+}
+p{
+    color: black;
 }
 button{ 
     max-width:75px;
