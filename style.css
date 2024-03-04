@@ -9,7 +9,7 @@ p,h1,h2{
 #topsection{
     display: flex;
     flex-direction: row;
-    width: 98vw;
+    width: 95vw;
     justify-content: space-between;
 }
 header{
@@ -31,6 +31,7 @@ h2{
 .logos{
     max-width: 100px;
     max-height: 100px;
+
 }
 .album{
     justify-content:space-between;
@@ -101,8 +102,37 @@ h2{
 p{
     color: black;
 }
-button{ 
+#shoppingvagn{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+.cart{ 
     max-width:75px;
     max-height: 20px;
     font-size: 12px;
+}
+aside{
+    background-color:rgb(100, 26, 170);
+    display: none;
+    width: 250px;
+    min-height: 500px;;
+    margin: auto;
+    border-radius: 5px;
+}
+
+
+/*@media screen and (min-width: 1008px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 5fr;
+    }
+    #topsection{
+        grid-column: 1/3;
+        
+    }
+    main{
+        grid-column: 1/3;
+    }
 }

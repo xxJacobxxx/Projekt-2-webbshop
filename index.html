@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div id="topsection">
@@ -16,51 +16,54 @@
             <h2>About</h2>
         </header>
         <img class="logos" src="./bilder/wdisk.webp" alt="musikdisklogga">
-        <img class="logos" src="./bilder/wcart.webp" alt="Shoppingvagn">
+        <button id="shoppingvagn" onclick="listDisplay()"><img class="logos" src="./bilder/wcart.webp" alt="Shoppingvagn"></button>
     </div>
     <main>
         <div class="album" id="samba">
             <div class="popup">
                 <p>Samba Esquema Novo</p>
                 <p>300kr</p>
-                <button>Add to cart</button>
+                <button class="cart" onclick="add('SambaEsquemaNovo', 300 )">Add to cart</button>
             </div>
         </div>
         <div class="album" id="forest">
             <div class="popup">
                 <p>2014 Forest Hills Drive</p>
                 <p>300kr</p>
-                <button>Add to cart</button>
+                <button class="cart" onclick="add('2014 Forest Hills Drive', 300)">Add to cart</button>
             </div>
         </div>
         <div class="album" id="utopia">
             <div class="popup">
                 <p>Utopia</p>
                 <p>300kr</p>
-                <button>Add to cart</button>
+                <button class="cart" onclick="add('Utopia', 300)">Add to cart</button>
             </div></div>
         <div class="album" id="puppets">
             <div class="popup">
                 <p>Master of Puppets</p>
                 <p>300kr</p>
-                <button>Add to cart</button>
+                <button class="cart" onclick="add('Master of Puppets', 300)">Add to cart</button>
             </div></div>
         <div class="album" id="ghosts">
             <div class="popup">
                 <p>Kids see ghosts</p>
                 <p>300kr</p>
-                <button>Add to cart</button>
+                <button class="cart" onclick="add('Kids See Ghosts',300)">Add to cart</button>
             </div>
             <div class="album" id="theory">
                 <div class="popup">
                     <p>Hybrid Theory</p>
                     <p>300kr</p>
-                    <button>Add to cart</button>
+                    <button class="cart" onclick="add('Hybrid Theory', 300)">Add to cart</button>
                 </div>
             </div>
         </div>
     </main>
     <aside>
+        <ul>
+
+        </ul>
     </aside>
 
 </body>
