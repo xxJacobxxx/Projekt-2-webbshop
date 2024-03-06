@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
 </head>
 <body>
     <div id="topsection">
@@ -17,6 +20,10 @@
         </header>
         <img class="logos" src="./bilder/wdisk.webp" alt="musikdisklogga">
         <button id="shoppingvagn" onclick="listDisplay()"><img class="logos" src="./bilder/wcart.webp" alt="Shoppingvagn"></button>
+    </div>
+    <div id="textbox">
+        <label for="userName">Username: </label>
+        <input type="text" name="userName" id="userName">
     </div>
     <main>
         <div class="album" id="samba">
@@ -64,6 +71,10 @@
         <ul>
 
         </ul>
+        <p id="tot"> </p>
+        <button id="save" onclick="saveToLocalStorage()">
+            Save for Later
+        </button>
     </aside>
 
 </body>
