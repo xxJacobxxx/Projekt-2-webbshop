@@ -21,10 +21,6 @@
         <img class="logos" src="./bilder/wdisk.webp" alt="musikdisklogga">
         <button id="shoppingvagn" onclick="listDisplay()"><img class="logos" src="./bilder/wcart.webp" alt="Shoppingvagn"></button>
     </div>
-    <div id="textbox">
-        <label for="userName">Username: </label>
-        <input type="text" name="userName" id="userName">
-    </div>
     <main>
         <div class="album" id="samba">
             <div class="popup">
@@ -58,12 +54,12 @@
                 <p>300kr</p>
                 <button class="cart" onclick="add('Kids See Ghosts',300)">Add to cart</button>
             </div>
-            <div class="album" id="theory">
-                <div class="popup">
-                    <p>Hybrid Theory</p>
-                    <p>300kr</p>
-                    <button class="cart" onclick="add('Hybrid Theory', 300)">Add to cart</button>
-                </div>
+        </div>
+        <div class="album" id="theory">
+            <div class="popup">
+                <p>Hybrid Theory</p>
+                <p>300kr</p>
+                <button class="cart" onclick="add('Hybrid Theory', 300)">Add to cart</button>
             </div>
         </div>
     </main>
@@ -72,8 +68,8 @@
 
         </ul>
         <p id="tot"> </p>
-        <button id="save" onclick="saveToLocalStorage()">
-            Save for Later
+        <button id="save" onclick="rensa()">
+            Clear Shoppingcart
         </button>
     </aside>
 

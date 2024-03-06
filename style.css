@@ -28,6 +28,10 @@ h2{
     text-align: center;
     font-size: 12px;
 }
+main{
+    display: flex;
+    flex-direction: column;
+}
 #textbox{
     grid-column: 1/3;
     margin: auto;
@@ -143,7 +147,7 @@ ul{
 }
 #save{
     height: 40px;
-    width: 75px;
+    width: 90px;
     font-size: 12px;
     margin: auto;
     margin-bottom: 20px;
@@ -151,7 +155,7 @@ ul{
 }
 
 
-@media screen and (min-width: 1008px){
+@media screen and (min-width: 641px){
     body{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -163,15 +167,15 @@ ul{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 70vw;
+        width: 65vw;
         grid-column: 1/3;
     }
     .album{
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
     }
     .popup{
-        width: 400px;
+        width: 350px;
     }
     aside{
         grid-column: 3/4;
