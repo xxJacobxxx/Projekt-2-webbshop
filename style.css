@@ -6,6 +6,9 @@ body{
 p,h1,h2{
     color: aliceblue;
 }
+p,ul,a{
+    font-family: "Montserrat", 'Times New Roman', Times, serif;
+}
 #topsection{
     display: flex;
     flex-direction: row;
@@ -22,11 +25,13 @@ header{
 h1{
     text-align: center;
     grid-column:1/4;
-    font-size: 20px;
+    font-size: 30px;
 }
-h2{
+a{
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
 }
 main{
     display: flex;
@@ -123,9 +128,9 @@ p{
     width: 100px;
 }
 .cart{ 
-    max-width:75px;
+    max-width:100px;
     max-height: 20px;
-    font-size: 12px;
+    font-size: 15px;
     border-radius: 5px;
 }
 aside{
@@ -143,12 +148,17 @@ li{
 }
 ul{
     list-style-type: none;
+    grid-row: 1/2;
 
+}
+#tot{
+    grid-row: 2/3;
+    margin: auto;
 }
 #save{
     height: 40px;
-    width: 90px;
-    font-size: 12px;
+    width: 110px;
+    font-size: 15px;
     margin: auto;
     margin-bottom: 20px;
     border-radius: 5px;
